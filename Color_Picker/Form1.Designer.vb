@@ -22,6 +22,7 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -33,6 +34,7 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -84,23 +86,29 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(33, 13)
+        Me.TextBox1.MaxLength = 3
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(43, 20)
         Me.TextBox1.TabIndex = 4
+        Me.TextBox1.Text = "0"
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(33, 39)
+        Me.TextBox2.MaxLength = 3
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(43, 20)
         Me.TextBox2.TabIndex = 4
+        Me.TextBox2.Text = "0"
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(33, 65)
+        Me.TextBox3.MaxLength = 3
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(43, 20)
         Me.TextBox3.TabIndex = 4
+        Me.TextBox3.Text = "0"
         '
         'Panel2
         '
@@ -108,6 +116,10 @@ Partial Class Form1
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(89, 69)
         Me.Panel2.TabIndex = 5
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
         '
         'Form1
         '
@@ -142,4 +154,5 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Timer1 As Timer
 End Class
