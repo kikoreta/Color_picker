@@ -77,11 +77,13 @@ Public Class Color_Picker
         TextBox1.SelectAll()
 
     End Sub
+
     Private Sub TextBox2_MouseDown() Handles TextBox2.MouseDown
 
         TextBox2.SelectAll()
 
     End Sub
+
     Private Sub TextBox3_MouseDown() Handles TextBox3.MouseDown
 
         TextBox3.SelectAll()
@@ -129,4 +131,5 @@ Public Class Color_Picker
         End If
 
     End Sub
+
 End Class
