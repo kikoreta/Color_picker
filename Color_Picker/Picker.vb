@@ -12,9 +12,9 @@
     End Sub
 
     Private Sub Picker_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Form1.TextBox1.Text = PictureBox2.BackColor.R
-        Form1.TextBox2.Text = PictureBox2.BackColor.G
-        Form1.TextBox3.Text = PictureBox2.BackColor.B
+        Color_Picker.TextBox1.Text = PictureBox2.BackColor.R
+        Color_Picker.TextBox2.Text = PictureBox2.BackColor.G
+        Color_Picker.TextBox3.Text = PictureBox2.BackColor.B
     End Sub
 
     Private Sub Picker_Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -1,8 +1,12 @@
 ﻿'Simple Color Select Tool for getting RGB Values By Kikoreta_sop
 
-Public Class Form1
+Public Class Color_Picker
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        TextBox1.Text = TextBox1.Text.Replace(" ", "")
+        TextBox2.Text = TextBox2.Text.Replace(" ", "")
+        TextBox3.Text = TextBox3.Text.Replace(" ", "")
 
         If TextBox1.Text = "" Then
 
@@ -40,7 +44,6 @@ Public Class Form1
 
         Panel2.BackColor = Color.FromArgb(TextBox1.Text, TextBox2.Text, TextBox3.Text)
 
-
         If ListBox1.SelectedIndex >= 0 And ListBox1.Focused = True Then
 
             Dim fields As String() = ListBox1.SelectedItem.Split(",")
@@ -66,7 +69,6 @@ Public Class Form1
             Picker.Visible = True
 
         End If
-
 
     End Sub
 
@@ -98,4 +100,33 @@ Public Class Form1
 
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+        Dim saveFile = New SaveFileDialog() With {.Filter = "Text File (*.Txt)|*.txt"}
+        Dim i As Integer
+
+        If (saveFile.ShowDialog() = System.Windows.Forms.DialogResult.OK) Then
+
+            Dim w = New IO.StreamWriter(saveFile.FileName)
+            For i = 0 To ListBox1.Items.Count - 1
+                w.WriteLine(ListBox1.Items.Item(i))
+            Next
+            w.Close()
+
+        End If
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+        Dim openFile = New OpenFileDialog() With {.Filter = "Text File (*.Txt)|*.txt"}
+
+        If (openFile.ShowDialog() = System.Windows.Forms.DialogResult.OK) Then
+
+            ListBox1.Items.Clear()
+            ListBox1.Items.AddRange(IO.File.ReadAllLines(openFile.FileName))
+
+        End If
+
+    End Sub
 End Class
