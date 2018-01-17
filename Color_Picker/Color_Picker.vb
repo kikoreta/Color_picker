@@ -2,45 +2,31 @@
 
 Public Class Color_Picker
 
+    Public activeTextBox As TextBox
+
+    Private Sub TextBox_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.Enter, TextBox2.Enter, TextBox3.Enter
+        activeTextBox = CType(sender, TextBox)
+    End Sub
+
+    Private Sub Textbox_Input(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress, TextBox2.KeyPress, TextBox3.KeyPress
+
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) Then
+            MessageBox.Show("Please enter only numbers in range of ""0 - 255""")
+            e.Handled = True
+        End If
+
+    End Sub
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
-        TextBox1.Text = TextBox1.Text.Replace(" ", "")
-        TextBox2.Text = TextBox2.Text.Replace(" ", "")
-        TextBox3.Text = TextBox3.Text.Replace(" ", "")
+        On Error Resume Next
+        If activeTextBox.Text > 255 Then
 
-        If TextBox1.Text = "" Then
-
-            TextBox1.Text = 0
-            TextBox1.SelectAll()
-
-        ElseIf TextBox2.Text = "" Then
-
-            TextBox2.Text = 0
-            TextBox2.SelectAll()
-
-        ElseIf TextBox3.Text = "" Then
-
-            TextBox3.Text = 0
-            TextBox3.SelectAll()
+            activeTextBox.Text = 0
+            MessageBox.Show("Please enter only numbers in range of ""0 - 255""")
 
         End If
-
-        If TextBox1.Text > 255 Then
-
-            TextBox1.Text = 0
-            TextBox1.SelectAll()
-
-        ElseIf TextBox2.Text > 255 Or TextBox2.Text = "" Then
-
-            TextBox2.Text = 0
-            TextBox2.SelectAll()
-
-        ElseIf TextBox3.Text > 255 Or TextBox3.Text = "" Then
-
-            TextBox3.Text = 0
-            TextBox3.SelectAll()
-
-        End If
+        On Error GoTo 0
 
         Panel2.BackColor = Color.FromArgb(TextBox1.Text, TextBox2.Text, TextBox3.Text)
 
@@ -72,21 +58,9 @@ Public Class Color_Picker
 
     End Sub
 
-    Private Sub TextBox1_MouseDown() Handles TextBox1.MouseDown
+    Private Sub TextBox_MouseDown() Handles TextBox1.MouseDown, TextBox2.MouseDown, TextBox3.MouseDown
 
-        TextBox1.SelectAll()
-
-    End Sub
-
-    Private Sub TextBox2_MouseDown() Handles TextBox2.MouseDown
-
-        TextBox2.SelectAll()
-
-    End Sub
-
-    Private Sub TextBox3_MouseDown() Handles TextBox3.MouseDown
-
-        TextBox3.SelectAll()
+        activeTextBox.SelectAll()
 
     End Sub
 
