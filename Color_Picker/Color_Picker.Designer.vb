@@ -42,8 +42,23 @@ Partial Class Color_Picker
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.TrackBar1 = New System.Windows.Forms.TrackBar()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.TrackBar2 = New System.Windows.Forms.TrackBar()
+        Me.TrackBar3 = New System.Windows.Forms.TrackBar()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -63,9 +78,9 @@ Partial Class Color_Picker
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 147)
+        Me.Panel1.Location = New System.Drawing.Point(0, 224)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(318, 42)
+        Me.Panel1.Size = New System.Drawing.Size(431, 42)
         Me.Panel1.TabIndex = 4
         '
         'Button5
@@ -107,7 +122,7 @@ Partial Class Color_Picker
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(11, 24)
+        Me.Label1.Location = New System.Drawing.Point(14, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(15, 13)
         Me.Label1.TabIndex = 3
@@ -116,7 +131,7 @@ Partial Class Color_Picker
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 64)
+        Me.Label2.Location = New System.Drawing.Point(14, 91)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(15, 13)
         Me.Label2.TabIndex = 3
@@ -125,7 +140,7 @@ Partial Class Color_Picker
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 111)
+        Me.Label3.Location = New System.Drawing.Point(15, 164)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(14, 13)
         Me.Label3.TabIndex = 3
@@ -133,7 +148,7 @@ Partial Class Color_Picker
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(33, 61)
+        Me.TextBox2.Location = New System.Drawing.Point(150, 91)
         Me.TextBox2.MaxLength = 3
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(27, 20)
@@ -142,7 +157,7 @@ Partial Class Color_Picker
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(33, 108)
+        Me.TextBox3.Location = New System.Drawing.Point(150, 161)
         Me.TextBox3.MaxLength = 3
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(27, 20)
@@ -152,9 +167,9 @@ Partial Class Color_Picker
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel2.Location = New System.Drawing.Point(66, 12)
+        Me.Panel2.Location = New System.Drawing.Point(192, 12)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(138, 129)
+        Me.Panel2.Size = New System.Drawing.Size(120, 199)
         Me.Panel2.TabIndex = 5
         '
         'Timer1
@@ -168,26 +183,149 @@ Partial Class Color_Picker
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(210, 12)
+        Me.ListBox1.Location = New System.Drawing.Point(325, 12)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(94, 121)
+        Me.ListBox1.Size = New System.Drawing.Size(94, 199)
         Me.ListBox1.TabIndex = 7
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(33, 21)
+        Me.TextBox1.Location = New System.Drawing.Point(150, 20)
         Me.TextBox1.MaxLength = 3
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(27, 20)
         Me.TextBox1.TabIndex = 8
         Me.TextBox1.Text = "0"
         '
-        'Form1
+        'TrackBar1
+        '
+        Me.TrackBar1.LargeChange = 10
+        Me.TrackBar1.Location = New System.Drawing.Point(33, 20)
+        Me.TrackBar1.Maximum = 255
+        Me.TrackBar1.Name = "TrackBar1"
+        Me.TrackBar1.Size = New System.Drawing.Size(111, 45)
+        Me.TrackBar1.TabIndex = 9
+        '
+        'Button6
+        '
+        Me.Button6.AutoSize = True
+        Me.Button6.Location = New System.Drawing.Point(150, 43)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(23, 26)
+        Me.Button6.TabIndex = 10
+        Me.Button6.Text = "+"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.AutoSize = True
+        Me.Button7.Location = New System.Drawing.Point(15, 43)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(23, 26)
+        Me.Button7.TabIndex = 11
+        Me.Button7.Text = "-"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'TrackBar2
+        '
+        Me.TrackBar2.LargeChange = 10
+        Me.TrackBar2.Location = New System.Drawing.Point(35, 91)
+        Me.TrackBar2.Maximum = 255
+        Me.TrackBar2.Name = "TrackBar2"
+        Me.TrackBar2.Size = New System.Drawing.Size(111, 45)
+        Me.TrackBar2.TabIndex = 12
+        '
+        'TrackBar3
+        '
+        Me.TrackBar3.LargeChange = 10
+        Me.TrackBar3.Location = New System.Drawing.Point(33, 161)
+        Me.TrackBar3.Maximum = 255
+        Me.TrackBar3.Name = "TrackBar3"
+        Me.TrackBar3.Size = New System.Drawing.Size(111, 45)
+        Me.TrackBar3.TabIndex = 13
+        '
+        'Button8
+        '
+        Me.Button8.AutoSize = True
+        Me.Button8.Location = New System.Drawing.Point(150, 119)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(23, 26)
+        Me.Button8.TabIndex = 14
+        Me.Button8.Text = "+"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.AutoSize = True
+        Me.Button9.Location = New System.Drawing.Point(150, 187)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(23, 26)
+        Me.Button9.TabIndex = 15
+        Me.Button9.Text = "+"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.AutoSize = True
+        Me.Button10.Location = New System.Drawing.Point(15, 119)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(23, 26)
+        Me.Button10.TabIndex = 16
+        Me.Button10.Text = "-"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.AutoSize = True
+        Me.Button11.Location = New System.Drawing.Point(15, 187)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(23, 26)
+        Me.Button11.TabIndex = 17
+        Me.Button11.Text = "-"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel3.Location = New System.Drawing.Point(44, 55)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(100, 14)
+        Me.Panel3.TabIndex = 18
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel4.Location = New System.Drawing.Point(44, 131)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(100, 14)
+        Me.Panel4.TabIndex = 19
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel5.Location = New System.Drawing.Point(44, 199)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(100, 14)
+        Me.Panel5.TabIndex = 19
+        '
+        'Color_Picker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(318, 189)
+        Me.ClientSize = New System.Drawing.Size(431, 266)
+        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.TrackBar3)
+        Me.Controls.Add(Me.TrackBar2)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.TrackBar1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Panel2)
@@ -199,11 +337,14 @@ Partial Class Color_Picker
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form1"
+        Me.Name = "Color_Picker"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Color Picker"
         Me.Panel1.ResumeLayout(False)
         CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -226,4 +367,16 @@ Partial Class Color_Picker
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents TrackBar1 As TrackBar
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents TrackBar3 As TrackBar
+    Friend WithEvents TrackBar2 As TrackBar
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel3 As Panel
 End Class
