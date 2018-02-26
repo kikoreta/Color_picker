@@ -18,6 +18,7 @@
         Color_Picker.TrackBar1.Value = PictureBox2.BackColor.R
         Color_Picker.TrackBar2.Value = PictureBox2.BackColor.G
         Color_Picker.TrackBar3.Value = PictureBox2.BackColor.B
+        Color_Picker.TrackBar4.Value = PictureBox2.BackColor.A
     End Sub
 
     Private Sub Picker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
