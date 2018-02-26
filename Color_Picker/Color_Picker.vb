@@ -5,12 +5,12 @@ Public Class Color_Picker
 
     Public ActiveTextBox As TextBox
 
-    Private Sub TextBox_Enter(sender As Object, e As EventArgs) Handles TextBox1.Enter, TextBox2.Enter, TextBox3.Enter, TextBox4.Enter
+    Private Sub TextBox_Enter(sender As Object, e As EventArgs) Handles TextBox1.Enter, TextBox2.Enter, TextBox3.Enter
         ActiveTextBox = CType(sender, TextBox)
     End Sub
 
     Private Shared Sub Textbox_Input(sender As Object, e As KeyPressEventArgs) _
-        Handles TextBox1.KeyPress, TextBox2.KeyPress, TextBox3.KeyPress, TextBox4.KeyPress
+        Handles TextBox1.KeyPress, TextBox2.KeyPress, TextBox3.KeyPress
 
         If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) Then
             MessageBox.Show(text:=$"Please enter only numbers in range of ""0 - 255""")
@@ -25,16 +25,14 @@ Public Class Color_Picker
 
             ActiveTextBox.Text = 0
             MessageBox.Show(text:=$"Please enter only numbers in range of ""0 - 255""")
-        ElseIf TextBox5.Text < "0" Then
-            TextBox5.Text = "FF000000"
+
         End If
         On Error GoTo 0
 
-        Panel2.BackColor = Color.FromArgb(TextBox4.Text, TextBox1.Text, TextBox2.Text, TextBox3.Text)
+        Panel2.BackColor = Color.FromArgb(TextBox1.Text, TextBox2.Text, TextBox3.Text)
         Panel3.BackColor = Color.FromArgb(TextBox1.Text, 0, 0)
         Panel4.BackColor = Color.FromArgb(0, TextBox2.Text, 0)
         Panel5.BackColor = Color.FromArgb(0, 0, TextBox3.Text)
-        Panel6.BackColor = Color.FromArgb(TextBox4.Text, 0, 0, 0)
 
         If ListBox1.SelectedIndex >= 0 And ListBox1.Focused = True Then
 
@@ -42,54 +40,22 @@ Public Class Color_Picker
             Dim cr = fields(0)
             Dim cg = fields(1)
             Dim cb = fields(2)
-            Dim ca = fields(3)
-            Panel2.BackColor = Color.FromArgb(ca, cr, cg, cb)
+            Panel2.BackColor = Color.FromArgb(cr, cg, cb)
             TextBox1.Text = cr
             TextBox2.Text = cg
             TextBox3.Text = cb
-            TextBox4.Text = ca
             TrackBar1.Value = cr
             TrackBar2.Value = cg
             TrackBar3.Value = cb
-            TrackBar4.Value = ca
-
-        ElseIf ActiveTextBox.Focused Then
-
-            TrackBar1.Value = TextBox1.Text
-            TrackBar2.Value = TextBox2.Text
-            TrackBar3.Value = TextBox3.Text
-            TrackBar4.Value = TextBox4.Text
-        ElseIf TextBox5.focused Then
-            Dim hex As String
-            Dim ha As String
-            Dim hr As String
-            Dim hg As String
-            Dim hb As String
-            hex = TextBox5.Text
-            ha = Val("&H" & Mid(hex, 1, 2))
-            hr = Val("&H" & Mid(hex, 3, 2))
-            hg = Val("&H" & Mid(hex, 5, 2))
-            hb = Val("&H" & Mid(hex, 7, 2))
-            TrackBar1.Value = hr
-            TrackBar2.Value = hg
-            TrackBar3.Value = hb
-            TrackBar4.Value = ha
-            TextBox1.Text = hr
-            TextBox2.Text = hg
-            TextBox3.Text = hb
-            TextBox4.Text = ha
 
         Else
+
             TextBox1.Text = TrackBar1.Value
             TextBox2.Text = TrackBar2.Value
             TextBox3.Text = TrackBar3.Value
-            TextBox4.Text = TrackBar4.Value
-            Dim c As Color = Color.FromArgb(TextBox4.Text, TextBox1.Text, TextBox2.Text, TextBox3.Text)
-            Dim value As Integer = c.ToArgb()
-            Dim hex As String = value.ToString("X6")
-            TextBox5.Text = hex
 
         End If
+
 
 
 
@@ -106,14 +72,14 @@ Public Class Color_Picker
 
     End Sub
 
-    Private Sub TextBox_MouseDown() Handles TextBox1.MouseDown, TextBox2.MouseDown, TextBox3.MouseDown, TextBox4.MouseDown
+    Private Sub TextBox_MouseDown() Handles TextBox1.MouseDown, TextBox2.MouseDown, TextBox3.MouseDown
 
         ActiveTextBox.SelectAll()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        ListBox1.Items.Add(TextBox1.Text + "," + TextBox2.Text + "," + TextBox3.Text + "," + TextBox4.Text)
+        ListBox1.Items.Add(TextBox1.Text + "," + TextBox2.Text + "," + TextBox3.Text)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -214,27 +180,4 @@ Public Class Color_Picker
                 If TrackBar3.Value > 0 Then TrackBar3.Value = TrackBar3.Value - 1
         End Select
     End Sub
-
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        Select Case ModifierKeys
-            Case Keys.Shift
-                If TrackBar4.Value + 10 < 255 Then TrackBar4.Value = TrackBar4.Value + 10
-            Case Keys.Control
-                If TrackBar4.Value + 100 < 255 Then TrackBar4.Value = TrackBar4.Value + 100
-            Case Else
-                If TrackBar4.Value < 255 Then TrackBar4.Value = TrackBar4.Value + 1
-        End Select
-    End Sub
-
-    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
-        Select Case ModifierKeys
-            Case Keys.Shift
-                If TrackBar4.Value - 10 > 0 Then TrackBar4.Value = TrackBar4.Value - 10
-            Case Keys.Control
-                If TrackBar4.Value - 100 > 0 Then TrackBar4.Value = TrackBar4.Value - 100
-            Case Else
-                If TrackBar4.Value > 0 Then TrackBar4.Value = TrackBar4.Value - 1
-        End Select
-    End Sub
-
 End Class
