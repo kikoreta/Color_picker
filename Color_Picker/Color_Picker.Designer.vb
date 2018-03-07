@@ -39,11 +39,8 @@ Partial Class Color_Picker
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.EventLog1 = New System.Diagnostics.EventLog()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -63,7 +60,6 @@ Partial Class Color_Picker
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -211,10 +207,6 @@ Partial Class Color_Picker
         'Timer1
         '
         Me.Timer1.Enabled = True
-        '
-        'EventLog1
-        '
-        Me.EventLog1.SynchronizingObject = Me
         '
         'ListBox1
         '
@@ -452,7 +444,6 @@ Partial Class Color_Picker
         Me.Text = "Color Picker"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -471,12 +462,9 @@ Partial Class Color_Picker
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Button2 As Button
-    Friend WithEvents EventLog1 As EventLog
     Friend WithEvents Button3 As Button
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents SaveFileDialog1 As SaveFileDialog
-    Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents TrackBar1 As TrackBar
