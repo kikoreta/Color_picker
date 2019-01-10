@@ -59,11 +59,13 @@ Partial Class Color_Picker
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel7.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -197,10 +199,13 @@ Partial Class Color_Picker
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel2.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Location = New System.Drawing.Point(192, 12)
+        Me.Panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel2.Location = New System.Drawing.Point(0, -2)
         Me.Panel2.Name = "Panel2"
+        Me.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Panel2.Size = New System.Drawing.Size(120, 277)
         Me.Panel2.TabIndex = 5
         '
@@ -404,12 +409,26 @@ Partial Class Color_Picker
         Me.Panel6.Size = New System.Drawing.Size(100, 14)
         Me.Panel6.TabIndex = 20
         '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel7.BackgroundImage = Global.Color_Picker.My.Resources.Resources.checkerboard_pattern_0
+        Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel7.Controls.Add(Me.Panel2)
+        Me.Panel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel7.Location = New System.Drawing.Point(183, 12)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Panel7.Size = New System.Drawing.Size(120, 277)
+        Me.Panel7.TabIndex = 25
+        '
         'Color_Picker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(448, 337)
+        Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
@@ -430,7 +449,6 @@ Partial Class Color_Picker
         Me.Controls.Add(Me.TrackBar1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label3)
@@ -448,6 +466,7 @@ Partial Class Color_Picker
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel7.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -487,4 +506,5 @@ Partial Class Color_Picker
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TrackBar4 As TrackBar
     Friend WithEvents Label4 As Label
+    Friend WithEvents Panel7 As Panel
 End Class
