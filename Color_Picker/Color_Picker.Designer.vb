@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Color_Picker
+Partial Friend NotInheritable Class Color_Picker
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -27,7 +27,7 @@ Partial Class Color_Picker
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TbHex = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -35,38 +35,39 @@ Partial Class Color_Picker
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TbG = New System.Windows.Forms.TextBox()
+        Me.TbB = New System.Windows.Forms.TextBox()
+        Me.PnlColor = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TrackBar1 = New System.Windows.Forms.TrackBar()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.TrackBar2 = New System.Windows.Forms.TrackBar()
-        Me.TrackBar3 = New System.Windows.Forms.TrackBar()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.LbColores = New System.Windows.Forms.ListBox()
+        Me.TbR = New System.Windows.Forms.TextBox()
+        Me.TBarR = New System.Windows.Forms.TrackBar()
+        Me.BtnRMas = New System.Windows.Forms.Button()
+        Me.BtnRMen = New System.Windows.Forms.Button()
+        Me.TBarG = New System.Windows.Forms.TrackBar()
+        Me.TBarB = New System.Windows.Forms.TrackBar()
+        Me.BtnGMas = New System.Windows.Forms.Button()
+        Me.BtnBMas = New System.Windows.Forms.Button()
+        Me.BtnGMen = New System.Windows.Forms.Button()
+        Me.BtnBMen = New System.Windows.Forms.Button()
+        Me.PnlR = New System.Windows.Forms.Panel()
+        Me.PnlG = New System.Windows.Forms.Panel()
+        Me.PnlB = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TrackBar4 = New System.Windows.Forms.TrackBar()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel1.SuspendLayout()
-        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel7.SuspendLayout()
-        Me.SuspendLayout()
+        Me.TBarA = New System.Windows.Forms.TrackBar()
+        Me.TbA = New System.Windows.Forms.TextBox()
+        Me.BtnAMas = New System.Windows.Forms.Button()
+        Me.BtnAMen = New System.Windows.Forms.Button()
+        Me.PnlA = New System.Windows.Forms.Panel()
+        Me.PnlGridFondo = New System.Windows.Forms.Panel()
+        Me.TbHexNoTrans = New System.Windows.Forms.TextBox()
+        Me.Panel1.SuspendLayout
+        CType(Me.TBarR,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TBarG,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TBarB,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TBarA,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.PnlGridFondo.SuspendLayout
+        Me.SuspendLayout
         '
         'Button1
         '
@@ -74,43 +75,43 @@ Partial Class Color_Picker
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(57, 23)
         Me.Button1.TabIndex = 4
-        Me.Button1.TabStop = False
+        Me.Button1.TabStop = false
         Me.Button1.Text = "Picker"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TextBox5)
+        Me.Panel1.Controls.Add(Me.TbHex)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 295)
+        Me.Panel1.Location = New System.Drawing.Point(0, 328)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(448, 42)
+        Me.Panel1.Size = New System.Drawing.Size(456, 42)
         Me.Panel1.TabIndex = 4
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
+        Me.Label5.AutoSize = true
         Me.Label5.Location = New System.Drawing.Point(3, 13)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(14, 13)
         Me.Label5.TabIndex = 25
         Me.Label5.Text = "#"
         '
-        'TextBox5
+        'TbHex
         '
-        Me.TextBox5.Location = New System.Drawing.Point(23, 10)
-        Me.TextBox5.MaxLength = 8
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 9
-        Me.TextBox5.TabStop = False
-        Me.TextBox5.Text = "FF000000"
+        Me.TbHex.Location = New System.Drawing.Point(23, 10)
+        Me.TbHex.MaxLength = 8
+        Me.TbHex.Name = "TbHex"
+        Me.TbHex.Size = New System.Drawing.Size(100, 20)
+        Me.TbHex.TabIndex = 9
+        Me.TbHex.TabStop = false
+        Me.TbHex.Text = "FF000000"
         '
         'Button5
         '
@@ -118,9 +119,9 @@ Partial Class Color_Picker
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(57, 23)
         Me.Button5.TabIndex = 8
-        Me.Button5.TabStop = False
+        Me.Button5.TabStop = false
         Me.Button5.Text = "Load"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = true
         '
         'Button4
         '
@@ -128,9 +129,9 @@ Partial Class Color_Picker
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(57, 23)
         Me.Button4.TabIndex = 7
-        Me.Button4.TabStop = False
+        Me.Button4.TabStop = false
         Me.Button4.Text = "Save"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = true
         '
         'Button3
         '
@@ -138,9 +139,9 @@ Partial Class Color_Picker
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(57, 23)
         Me.Button3.TabIndex = 6
-        Me.Button3.TabStop = False
+        Me.Button3.TabStop = false
         Me.Button3.Text = "Remove"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = true
         '
         'Button2
         '
@@ -148,13 +149,13 @@ Partial Class Color_Picker
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(57, 23)
         Me.Button2.TabIndex = 5
-        Me.Button2.TabStop = False
+        Me.Button2.TabStop = false
         Me.Button2.Text = "Add"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = true
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(14, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(15, 13)
@@ -163,7 +164,7 @@ Partial Class Color_Picker
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(14, 91)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(15, 13)
@@ -172,339 +173,349 @@ Partial Class Color_Picker
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        Me.Label3.AutoSize = true
         Me.Label3.Location = New System.Drawing.Point(15, 164)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(14, 13)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "B"
         '
-        'TextBox2
+        'TbG
         '
-        Me.TextBox2.Location = New System.Drawing.Point(150, 91)
-        Me.TextBox2.MaxLength = 3
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(27, 20)
-        Me.TextBox2.TabIndex = 2
-        Me.TextBox2.Text = "0"
+        Me.TbG.Location = New System.Drawing.Point(150, 91)
+        Me.TbG.MaxLength = 3
+        Me.TbG.Name = "TbG"
+        Me.TbG.Size = New System.Drawing.Size(27, 20)
+        Me.TbG.TabIndex = 2
+        Me.TbG.Text = "0"
         '
-        'TextBox3
+        'TbB
         '
-        Me.TextBox3.Location = New System.Drawing.Point(150, 161)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(27, 20)
-        Me.TextBox3.TabIndex = 3
-        Me.TextBox3.Text = "0"
+        Me.TbB.Location = New System.Drawing.Point(150, 161)
+        Me.TbB.MaxLength = 3
+        Me.TbB.Name = "TbB"
+        Me.TbB.Size = New System.Drawing.Size(27, 20)
+        Me.TbB.TabIndex = 3
+        Me.TbB.Text = "0"
         '
-        'Panel2
+        'PnlColor
         '
-        Me.Panel2.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel2.Location = New System.Drawing.Point(0, -2)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Panel2.Size = New System.Drawing.Size(120, 277)
-        Me.Panel2.TabIndex = 5
+        Me.PnlColor.BackColor = System.Drawing.SystemColors.Control
+        Me.PnlColor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PnlColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlColor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PnlColor.Location = New System.Drawing.Point(0, -2)
+        Me.PnlColor.Name = "PnlColor"
+        Me.PnlColor.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.PnlColor.Size = New System.Drawing.Size(120, 280)
+        Me.PnlColor.TabIndex = 5
         '
         'Timer1
         '
-        Me.Timer1.Enabled = True
+        Me.Timer1.Enabled = true
         '
-        'ListBox1
+        'LbColores
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(325, 12)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(114, 277)
-        Me.ListBox1.TabIndex = 7
-        Me.ListBox1.TabStop = False
+        Me.LbColores.FormattingEnabled = true
+        Me.LbColores.Location = New System.Drawing.Point(325, 12)
+        Me.LbColores.Name = "LbColores"
+        Me.LbColores.Size = New System.Drawing.Size(114, 277)
+        Me.LbColores.TabIndex = 7
+        Me.LbColores.TabStop = false
         '
-        'TextBox1
+        'TbR
         '
-        Me.TextBox1.Location = New System.Drawing.Point(150, 20)
-        Me.TextBox1.MaxLength = 3
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(27, 20)
-        Me.TextBox1.TabIndex = 1
-        Me.TextBox1.Text = "0"
+        Me.TbR.Location = New System.Drawing.Point(150, 20)
+        Me.TbR.MaxLength = 3
+        Me.TbR.Name = "TbR"
+        Me.TbR.Size = New System.Drawing.Size(27, 20)
+        Me.TbR.TabIndex = 1
+        Me.TbR.Text = "0"
         '
-        'TrackBar1
+        'TBarR
         '
-        Me.TrackBar1.LargeChange = 10
-        Me.TrackBar1.Location = New System.Drawing.Point(33, 20)
-        Me.TrackBar1.Maximum = 255
-        Me.TrackBar1.Name = "TrackBar1"
-        Me.TrackBar1.Size = New System.Drawing.Size(111, 45)
-        Me.TrackBar1.TabIndex = 5
+        Me.TBarR.LargeChange = 10
+        Me.TBarR.Location = New System.Drawing.Point(33, 20)
+        Me.TBarR.Maximum = 255
+        Me.TBarR.Name = "TBarR"
+        Me.TBarR.Size = New System.Drawing.Size(111, 45)
+        Me.TBarR.TabIndex = 5
         '
-        'Button6
+        'BtnRMas
         '
-        Me.Button6.AutoSize = True
-        Me.Button6.Location = New System.Drawing.Point(150, 43)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(23, 26)
-        Me.Button6.TabIndex = 10
-        Me.Button6.TabStop = False
-        Me.Button6.Text = "+"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.BtnRMas.AutoSize = true
+        Me.BtnRMas.Location = New System.Drawing.Point(150, 43)
+        Me.BtnRMas.Name = "BtnRMas"
+        Me.BtnRMas.Size = New System.Drawing.Size(23, 26)
+        Me.BtnRMas.TabIndex = 10
+        Me.BtnRMas.TabStop = false
+        Me.BtnRMas.Text = "+"
+        Me.BtnRMas.UseVisualStyleBackColor = true
         '
-        'Button7
+        'BtnRMen
         '
-        Me.Button7.AutoSize = True
-        Me.Button7.Location = New System.Drawing.Point(15, 43)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(23, 26)
-        Me.Button7.TabIndex = 11
-        Me.Button7.TabStop = False
-        Me.Button7.Text = "-"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.BtnRMen.AutoSize = true
+        Me.BtnRMen.Location = New System.Drawing.Point(15, 43)
+        Me.BtnRMen.Name = "BtnRMen"
+        Me.BtnRMen.Size = New System.Drawing.Size(23, 26)
+        Me.BtnRMen.TabIndex = 11
+        Me.BtnRMen.TabStop = false
+        Me.BtnRMen.Text = "-"
+        Me.BtnRMen.UseVisualStyleBackColor = true
         '
-        'TrackBar2
+        'TBarG
         '
-        Me.TrackBar2.LargeChange = 10
-        Me.TrackBar2.Location = New System.Drawing.Point(35, 91)
-        Me.TrackBar2.Maximum = 255
-        Me.TrackBar2.Name = "TrackBar2"
-        Me.TrackBar2.Size = New System.Drawing.Size(111, 45)
-        Me.TrackBar2.TabIndex = 6
+        Me.TBarG.LargeChange = 10
+        Me.TBarG.Location = New System.Drawing.Point(35, 91)
+        Me.TBarG.Maximum = 255
+        Me.TBarG.Name = "TBarG"
+        Me.TBarG.Size = New System.Drawing.Size(111, 45)
+        Me.TBarG.TabIndex = 6
         '
-        'TrackBar3
+        'TBarB
         '
-        Me.TrackBar3.LargeChange = 10
-        Me.TrackBar3.Location = New System.Drawing.Point(33, 161)
-        Me.TrackBar3.Maximum = 255
-        Me.TrackBar3.Name = "TrackBar3"
-        Me.TrackBar3.Size = New System.Drawing.Size(111, 45)
-        Me.TrackBar3.TabIndex = 7
+        Me.TBarB.LargeChange = 10
+        Me.TBarB.Location = New System.Drawing.Point(33, 161)
+        Me.TBarB.Maximum = 255
+        Me.TBarB.Name = "TBarB"
+        Me.TBarB.Size = New System.Drawing.Size(111, 45)
+        Me.TBarB.TabIndex = 7
         '
-        'Button8
+        'BtnGMas
         '
-        Me.Button8.AutoSize = True
-        Me.Button8.Location = New System.Drawing.Point(150, 119)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(23, 26)
-        Me.Button8.TabIndex = 14
-        Me.Button8.TabStop = False
-        Me.Button8.Text = "+"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.BtnGMas.AutoSize = true
+        Me.BtnGMas.Location = New System.Drawing.Point(150, 119)
+        Me.BtnGMas.Name = "BtnGMas"
+        Me.BtnGMas.Size = New System.Drawing.Size(23, 26)
+        Me.BtnGMas.TabIndex = 14
+        Me.BtnGMas.TabStop = false
+        Me.BtnGMas.Text = "+"
+        Me.BtnGMas.UseVisualStyleBackColor = true
         '
-        'Button9
+        'BtnBMas
         '
-        Me.Button9.AutoSize = True
-        Me.Button9.Location = New System.Drawing.Point(150, 187)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(23, 26)
-        Me.Button9.TabIndex = 15
-        Me.Button9.TabStop = False
-        Me.Button9.Text = "+"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.BtnBMas.AutoSize = true
+        Me.BtnBMas.Location = New System.Drawing.Point(150, 187)
+        Me.BtnBMas.Name = "BtnBMas"
+        Me.BtnBMas.Size = New System.Drawing.Size(23, 26)
+        Me.BtnBMas.TabIndex = 15
+        Me.BtnBMas.TabStop = false
+        Me.BtnBMas.Text = "+"
+        Me.BtnBMas.UseVisualStyleBackColor = true
         '
-        'Button10
+        'BtnGMen
         '
-        Me.Button10.AutoSize = True
-        Me.Button10.Location = New System.Drawing.Point(15, 119)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(23, 26)
-        Me.Button10.TabIndex = 16
-        Me.Button10.TabStop = False
-        Me.Button10.Text = "-"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.BtnGMen.AutoSize = true
+        Me.BtnGMen.Location = New System.Drawing.Point(15, 119)
+        Me.BtnGMen.Name = "BtnGMen"
+        Me.BtnGMen.Size = New System.Drawing.Size(23, 26)
+        Me.BtnGMen.TabIndex = 16
+        Me.BtnGMen.TabStop = false
+        Me.BtnGMen.Text = "-"
+        Me.BtnGMen.UseVisualStyleBackColor = true
         '
-        'Button11
+        'BtnBMen
         '
-        Me.Button11.AutoSize = True
-        Me.Button11.Location = New System.Drawing.Point(15, 187)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(23, 26)
-        Me.Button11.TabIndex = 17
-        Me.Button11.TabStop = False
-        Me.Button11.Text = "-"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.BtnBMen.AutoSize = true
+        Me.BtnBMen.Location = New System.Drawing.Point(15, 187)
+        Me.BtnBMen.Name = "BtnBMen"
+        Me.BtnBMen.Size = New System.Drawing.Size(23, 26)
+        Me.BtnBMen.TabIndex = 17
+        Me.BtnBMen.TabStop = false
+        Me.BtnBMen.Text = "-"
+        Me.BtnBMen.UseVisualStyleBackColor = true
         '
-        'Panel3
+        'PnlR
         '
-        Me.Panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Location = New System.Drawing.Point(44, 55)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(100, 14)
-        Me.Panel3.TabIndex = 18
+        Me.PnlR.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PnlR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlR.Location = New System.Drawing.Point(44, 55)
+        Me.PnlR.Name = "PnlR"
+        Me.PnlR.Size = New System.Drawing.Size(100, 14)
+        Me.PnlR.TabIndex = 18
         '
-        'Panel4
+        'PnlG
         '
-        Me.Panel4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Location = New System.Drawing.Point(44, 131)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(100, 14)
-        Me.Panel4.TabIndex = 19
+        Me.PnlG.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PnlG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlG.Location = New System.Drawing.Point(44, 131)
+        Me.PnlG.Name = "PnlG"
+        Me.PnlG.Size = New System.Drawing.Size(100, 14)
+        Me.PnlG.TabIndex = 19
         '
-        'Panel5
+        'PnlB
         '
-        Me.Panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Location = New System.Drawing.Point(44, 199)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(100, 14)
-        Me.Panel5.TabIndex = 19
+        Me.PnlB.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PnlB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlB.Location = New System.Drawing.Point(44, 199)
+        Me.PnlB.Name = "PnlB"
+        Me.PnlB.Size = New System.Drawing.Size(100, 14)
+        Me.PnlB.TabIndex = 19
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(15, 231)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(14, 13)
         Me.Label4.TabIndex = 20
         Me.Label4.Text = "A"
         '
-        'TrackBar4
+        'TBarA
         '
-        Me.TrackBar4.LargeChange = 10
-        Me.TrackBar4.Location = New System.Drawing.Point(35, 228)
-        Me.TrackBar4.Maximum = 255
-        Me.TrackBar4.Name = "TrackBar4"
-        Me.TrackBar4.Size = New System.Drawing.Size(111, 45)
-        Me.TrackBar4.TabIndex = 8
+        Me.TBarA.LargeChange = 10
+        Me.TBarA.Location = New System.Drawing.Point(35, 228)
+        Me.TBarA.Maximum = 255
+        Me.TBarA.Name = "TBarA"
+        Me.TBarA.Size = New System.Drawing.Size(111, 45)
+        Me.TBarA.TabIndex = 8
         '
-        'TextBox4
+        'TbA
         '
-        Me.TextBox4.Location = New System.Drawing.Point(150, 228)
-        Me.TextBox4.MaxLength = 3
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(27, 20)
-        Me.TextBox4.TabIndex = 4
-        Me.TextBox4.Text = "255"
+        Me.TbA.Location = New System.Drawing.Point(150, 228)
+        Me.TbA.MaxLength = 3
+        Me.TbA.Name = "TbA"
+        Me.TbA.Size = New System.Drawing.Size(27, 20)
+        Me.TbA.TabIndex = 4
+        Me.TbA.Text = "255"
         '
-        'Button12
+        'BtnAMas
         '
-        Me.Button12.AutoSize = True
-        Me.Button12.Location = New System.Drawing.Point(150, 257)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(23, 26)
-        Me.Button12.TabIndex = 23
-        Me.Button12.TabStop = False
-        Me.Button12.Text = "+"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.BtnAMas.AutoSize = true
+        Me.BtnAMas.Location = New System.Drawing.Point(150, 257)
+        Me.BtnAMas.Name = "BtnAMas"
+        Me.BtnAMas.Size = New System.Drawing.Size(23, 26)
+        Me.BtnAMas.TabIndex = 23
+        Me.BtnAMas.TabStop = false
+        Me.BtnAMas.Text = "+"
+        Me.BtnAMas.UseVisualStyleBackColor = true
         '
-        'Button13
+        'BtnAMen
         '
-        Me.Button13.AutoSize = True
-        Me.Button13.Location = New System.Drawing.Point(15, 257)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(23, 26)
-        Me.Button13.TabIndex = 24
-        Me.Button13.TabStop = False
-        Me.Button13.Text = "-"
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.BtnAMen.AutoSize = true
+        Me.BtnAMen.Location = New System.Drawing.Point(15, 257)
+        Me.BtnAMen.Name = "BtnAMen"
+        Me.BtnAMen.Size = New System.Drawing.Size(23, 26)
+        Me.BtnAMen.TabIndex = 24
+        Me.BtnAMen.TabStop = false
+        Me.BtnAMen.Text = "-"
+        Me.BtnAMen.UseVisualStyleBackColor = true
         '
-        'Panel6
+        'PnlA
         '
-        Me.Panel6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel6.Location = New System.Drawing.Point(44, 269)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(100, 14)
-        Me.Panel6.TabIndex = 20
+        Me.PnlA.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PnlA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlA.Location = New System.Drawing.Point(44, 269)
+        Me.PnlA.Name = "PnlA"
+        Me.PnlA.Size = New System.Drawing.Size(100, 14)
+        Me.PnlA.TabIndex = 20
         '
-        'Panel7
+        'PnlGridFondo
         '
-        Me.Panel7.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel7.BackgroundImage = Global.Color_Picker.My.Resources.Resources.checkerboard_pattern_0
-        Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel7.Controls.Add(Me.Panel2)
-        Me.Panel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel7.Location = New System.Drawing.Point(183, 12)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Panel7.Size = New System.Drawing.Size(120, 277)
-        Me.Panel7.TabIndex = 25
+        Me.PnlGridFondo.BackColor = System.Drawing.SystemColors.Control
+        Me.PnlGridFondo.BackgroundImage = Global.Color_Picker.My.Resources.Resources.checkerboard_pattern_0
+        Me.PnlGridFondo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlGridFondo.Controls.Add(Me.PnlColor)
+        Me.PnlGridFondo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PnlGridFondo.Location = New System.Drawing.Point(183, 12)
+        Me.PnlGridFondo.Name = "PnlGridFondo"
+        Me.PnlGridFondo.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.PnlGridFondo.Size = New System.Drawing.Size(120, 280)
+        Me.PnlGridFondo.TabIndex = 25
+        '
+        'TbHexNoTrans
+        '
+        Me.TbHexNoTrans.Location = New System.Drawing.Point(23, 302)
+        Me.TbHexNoTrans.Name = "TbHexNoTrans"
+        Me.TbHexNoTrans.ReadOnly = true
+        Me.TbHexNoTrans.Size = New System.Drawing.Size(100, 20)
+        Me.TbHexNoTrans.TabIndex = 26
         '
         'Color_Picker
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(448, 337)
-        Me.Controls.Add(Me.Panel7)
-        Me.Controls.Add(Me.Panel6)
-        Me.Controls.Add(Me.Button13)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TrackBar4)
+        Me.ClientSize = New System.Drawing.Size(456, 370)
+        Me.Controls.Add(Me.TbHexNoTrans)
+        Me.Controls.Add(Me.PnlGridFondo)
+        Me.Controls.Add(Me.PnlA)
+        Me.Controls.Add(Me.BtnAMen)
+        Me.Controls.Add(Me.BtnAMas)
+        Me.Controls.Add(Me.TbA)
+        Me.Controls.Add(Me.TBarA)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Panel5)
-        Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.TrackBar3)
-        Me.Controls.Add(Me.TrackBar2)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.TrackBar1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.PnlB)
+        Me.Controls.Add(Me.PnlG)
+        Me.Controls.Add(Me.PnlR)
+        Me.Controls.Add(Me.BtnBMen)
+        Me.Controls.Add(Me.BtnGMen)
+        Me.Controls.Add(Me.BtnBMas)
+        Me.Controls.Add(Me.BtnGMas)
+        Me.Controls.Add(Me.TBarB)
+        Me.Controls.Add(Me.TBarG)
+        Me.Controls.Add(Me.BtnRMen)
+        Me.Controls.Add(Me.BtnRMas)
+        Me.Controls.Add(Me.TBarR)
+        Me.Controls.Add(Me.TbR)
+        Me.Controls.Add(Me.LbColores)
+        Me.Controls.Add(Me.TbB)
+        Me.Controls.Add(Me.TbG)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Color_Picker"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Color Picker"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel7.ResumeLayout(False)
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.Panel1.ResumeLayout(false)
+        Me.Panel1.PerformLayout
+        CType(Me.TBarR,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TBarG,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TBarB,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TBarA,System.ComponentModel.ISupportInitialize).EndInit
+        Me.PnlGridFondo.ResumeLayout(false)
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents TbG As TextBox
+    Friend WithEvents TbB As TextBox
+    Friend WithEvents PnlColor As Panel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents LbColores As ListBox
+    Friend WithEvents TbR As TextBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents TrackBar1 As TrackBar
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents TrackBar3 As TrackBar
-    Friend WithEvents TrackBar2 As TrackBar
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TBarR As TrackBar
+    Friend WithEvents BtnRMas As Button
+    Friend WithEvents BtnBMas As Button
+    Friend WithEvents BtnGMas As Button
+    Friend WithEvents TBarB As TrackBar
+    Friend WithEvents TBarG As TrackBar
+    Friend WithEvents BtnRMen As Button
+    Friend WithEvents BtnBMen As Button
+    Friend WithEvents BtnGMen As Button
+    Friend WithEvents PnlB As Panel
+    Friend WithEvents PnlG As Panel
+    Friend WithEvents PnlR As Panel
+    Friend WithEvents TbHex As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Button13 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TrackBar4 As TrackBar
+    Friend WithEvents PnlA As Panel
+    Friend WithEvents BtnAMen As Button
+    Friend WithEvents BtnAMas As Button
+    Friend WithEvents TbA As TextBox
+    Friend WithEvents TBarA As TrackBar
     Friend WithEvents Label4 As Label
-    Friend WithEvents Panel7 As Panel
+    Friend WithEvents PnlGridFondo As Panel
+    Friend WithEvents TbHexNoTrans As TextBox
 End Class
